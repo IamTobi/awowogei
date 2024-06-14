@@ -4,7 +4,6 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { sortAndAssignIcons } from "../utils/player-skills";
 import { PlayerSkill } from "../types/player-skill.model";
-import ImagePreloader from "../utils/ImagePreloader";
 
 function PlayerLookupPage() {
   const [playerSkillData, setPlayerSkillsData] = useState<PlayerSkill[]>([]);
