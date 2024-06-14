@@ -17,7 +17,7 @@ function ImagePreloader() {
         svgFiles.map(async (fileName) => {
           try {
             const img = new Image();
-            img.src = `./assets/skills/${fileName}`;
+            img.src = `/images/skills/${fileName}`;
             await new Promise((resolve, reject) => {
               img.onload = resolve;
               img.onerror = reject;
