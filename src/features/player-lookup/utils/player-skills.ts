@@ -1,4 +1,4 @@
-import { PlayerSkill } from "../player-skill.model";
+import { PlayerSkill } from "../types/player-skill.model";
 const customOrder = [
   "Attack",
   "Hitpoints",
@@ -36,7 +36,7 @@ export function sortAndAssignIcons(playerSkillData: PlayerSkill[]) {
   return playerSkillData
     .map((skill) => ({
       ...skill,
-      icon: `./src/assets/skills/${skill.name.toLowerCase()}.svg`, // Convert name to lowercase
+      icon: `/images/skills/${skill.name.toLowerCase()}.svg`, // Convert name to lowercase
     }))
     .sort((a, b) => customOrder.indexOf(a.name) - customOrder.indexOf(b.name));
 }
